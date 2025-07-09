@@ -71,7 +71,7 @@ app.get("/sum", function (req, res) {
   const a = parseInt(req.query.a);
   const b = parseInt(req.query.b);
   const sum = a + b;
-  res.send(sum.toString());
+  res.send(sum.toString());  // return back to the frontend, i dont return in the json format i return in the text format, 
 });
 /*
 GET route at /sum

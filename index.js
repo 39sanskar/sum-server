@@ -10,12 +10,18 @@ This allows your frontend (e.g., React at localhost:3000) to make requests
 to this backend (at localhost:8080) without getting blocked by the browser.
 */
 const todos = [
-  { id: 1, title: "Todo 1", description: "Go to the Gym", completed: false },
-  { id: 2, title: "Todo 2", description: "Please complete Your Homework", completed: false },
-  { id: 3, title: "Todo 3", description: "Go to the snacks", completed: false },
-  { id: 4, title: "Todo 4", description: "Call to uour parents", completed: false },
-  { id: 5, title: "Todo 5", description: "Good Night", completed: false },
+  { id: 1, title: "Organize workspace", description: "Clean and declutter the desk and computer area.", completed: false },
+  { id: 2, title: "Read a chapter from a book", description: "Finish reading chapter 4 of 'Atomic Habits'.", completed: false },
+  { id: 3, title: "Push code to GitHub", description: "Upload latest commits for the todo app project.", completed: false },
+  { id: 4, title: "30-minute walk", description: "Take a walk outside to stretch and refresh.", completed: false },
+  { id: 5, title: "Drink water", description: "Drink at least 2 liters of water today.", completed: false },
+  { id: 6, title: "Practice React", description: "Build a simple component using hooks.", completed: false },
+  { id: 7, title: "Meditate", description: "Do a 10-minute guided meditation using an app.", completed: false },
+  { id: 8, title: "Clean email inbox", description: "Delete or archive unnecessary emails.", completed: false },
+  { id: 9, title: "Learn 5 new words", description: "Pick any language and note down 5 new words.", completed: false },
+  { id: 10, title: "Try a new recipe", description: "Cook something you’ve never made before.", completed: false }
 ];
+
 /*
 A hardcoded array of todo items. Each item is an object with:
 

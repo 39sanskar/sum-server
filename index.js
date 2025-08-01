@@ -10,11 +10,11 @@ This allows your frontend (e.g., React at localhost:3000) to make requests
 to this backend (at localhost:8080) without getting blocked by the browser.
 */
 const todos = [
-  { id: 1, title: "Todo 1", description: "This is todo 1", completed: false },
-  { id: 2, title: "Todo 2", description: "This is todo 2", completed: false },
-  { id: 3, title: "Todo 3", description: "This is todo 3", completed: false },
-  { id: 4, title: "Todo 4", description: "This is todo 4", completed: false },
-  { id: 5, title: "Todo 5", description: "This is todo 5", completed: false },
+  { id: 1, title: "Todo 1", description: "Go to the Gym", completed: false },
+  { id: 2, title: "Todo 2", description: "Please complete Your Homework", completed: false },
+  { id: 3, title: "Todo 3", description: "Go to the snacks", completed: false },
+  { id: 4, title: "Todo 4", description: "Call to uour parents", completed: false },
+  { id: 5, title: "Todo 5", description: "Good Night", completed: false },
 ];
 /*
 A hardcoded array of todo items. Each item is an object with:
@@ -92,7 +92,7 @@ app.get("/interest", function (req, res) {
   res.json({ total, interest });
 });
 /*
-GET route at /interest
+GET route at /interest 
 Example: http://localhost:8080/interest?principal=1000&rate=5&time=2
 
 Extracts principal, rate, and time from query string

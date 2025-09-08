@@ -51,6 +51,16 @@ todos.find(...): searches the todos array for a matching ID
 res.json({ todo }): returns the found todo in JSON format
 */
 
+// ✅ Route to get all todos
+app.get("/todos", function (req, res) {
+  res.json({ todos });
+});
+/*
+GET route at /todos
+Example: http://localhost:8080/todos
+
+Simply sends back the full todos array as JSON
+*/
 
 // ✅ Route to get random todos
 app.get("/random-todos", function (req, res) {
@@ -145,6 +155,7 @@ How to access ?
 
 Endpoint	                                  What it does                     Example  
 /todo?id=2	                                Get specific todo	               http://localhost:8080/todo?id=2
+/todos                                      Get all todos                    http://localhost:8080/todos
 /random-todos 	                            Get random todos	               http://localhost:8080/random-todos
 /sum?a=10&b=20	                            Get sum	                         http://localhost:8080/sum?a=10&b=20
 /interest?principal=1000&rate=5&time=2	    Get interest	                   http://localhost:8080/interest?principal=1000&rate=5&time=2
